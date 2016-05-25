@@ -428,7 +428,9 @@
 		moveForward: false,
 		moveBackward: false,
 		moveLeft: false,
-		moveRight: false
+		moveRight:false,
+		jump:false,
+		crouch:false,
 
 	};
 
@@ -679,9 +681,9 @@
 //			these functions are unprefect
 
 
-			//case 67: /*C*/     controls.crouch = true; break;
-			//case 32: /*space*/ controls.jump = true; break;
-			//case 17: /*ctrl*/  controls.attack = true; break;
+			case 67: /*C*/     controls.crouch = true; break;
+			case 32: /*space*/ controls.jump = true; break;
+			case 17: /*ctrl*/  controls.attack = true; break;
 
 		}
 
@@ -712,7 +714,7 @@
 
 			case 67: /*C*/     controls.crouch = false; break;
 			case 32: /*space*/ controls.jump = false; break;
-			case 17: /*ctrl*/  controls.attack = false; break;
+//			case 17: /*ctrl*/  controls.attack = false; break;
 
 		}
 
