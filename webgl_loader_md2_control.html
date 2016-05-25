@@ -431,7 +431,7 @@
 		moveRight:false,
 		jump:false,
 		crouch:false,
-
+		attack:false,
 	};
 
 	var clock = new THREE.Clock();
@@ -714,7 +714,7 @@
 
 			case 67: /*C*/     controls.crouch = false; break;
 			case 32: /*space*/ controls.jump = false; break;
-//			case 17: /*ctrl*/  controls.attack = false; break;
+			case 17: /*ctrl*/  controls.attack = false; break;
 
 		}
 
